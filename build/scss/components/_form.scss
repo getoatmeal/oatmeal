@@ -1,0 +1,60 @@
+@import "var";
+
+.form-oatmeal {
+    margin-bottom: 20px;
+    input, textarea {
+        padding: 8px 10px;
+        border: #999 solid 1px;
+        border-radius: 5px;
+        font-size: $font-size-base;
+        box-shadow: none;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    textarea {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        min-height: 100px;
+    }
+    input:focus, textarea:focus, select:focus {
+        border: 1px solid #16c9fa;
+        outline: 0;
+    }
+    label, legend {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input[type="checkbox"], input[type="radio"]{
+        display: inline-block;
+        margin-right: 5px;
+        padding:3px;
+        width: auto;
+    }
+    input[type="radio"] + label, input[type="checkbox"] + label{
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 20px;
+        padding:3px;
+        font-weight: normal;
+    }
+    button {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 100;
+        text-align: center;
+        cursor: pointer;
+        border:$grey solid 1px;
+        border-radius: 4px;
+        background: $white;
+        color: $color-link;
+        padding: 8px 10px;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+    button:hover, button:focus {
+        background:$lighten-grey
+    }
+}

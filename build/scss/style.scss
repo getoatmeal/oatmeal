@@ -1,0 +1,112 @@
+/*!
+ * Oatmeal v1.0
+ * Copyright 2015-2014 Oatmeal, Inc.
+ * Author Muhammad Haykal
+ * Licensed under MIT
+ */
+@import	"components/var",
+		    "components/menu";
+
+.main.container {
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.biglogo {
+  width:150px;
+  height: 150px;
+  margin:auto;
+  margin-bottom: 20px;
+  a{
+    width: 150px;
+    height: 150px;
+    background:url(../img/logo-oatmeal.png)center center;
+    background-size:cover;
+    display: block;
+    transition: 0.3s;
+  }
+  a:hover{
+    width: 170px;
+    height: 170px;
+    margin:0px 0px 0px -10px;
+  }
+}
+.bigbanner{
+  height:300px;
+  background: $color-tertiary;
+  color:$white;
+  padding:70px 20px 100px 20px;
+  text-align: center;
+  h1{
+  	font-family: $font-family-serief;
+    font-weight:bold;
+    font-style:italic;
+    letter-spacing: 1px;
+    color:$white;
+    margin-top: 10px;
+  }
+  h3{
+    font-weight: 100;
+    line-height: 1.5em;
+    color:$white;
+  }
+}
+.bg-grid {
+  background:$lighten-grey;
+  border:$white solid 1px;
+  color:$dark;
+  font-size: 12px;
+}
+.top{
+  top:0px;
+}
+.box-sample {
+    border:$lighten-grey solid 1px;
+    padding:20px;
+    margin-bottom: 20px;
+}
+.boxmodel1, .boxmodel2, .boxmodel3, .boxmodel4,{
+  border:$grey solid 1px;
+  padding:5px 20px;
+  p{
+    text-align: center;
+    margin:0px;
+    font-size: 14px !important;
+  }
+}
+.boxmodel1{
+  margin:auto;
+  background:#fdf7b4;
+}
+.boxmodel2{
+  background: $color-tertiary;
+}
+.boxmodel3{
+  background: #dafdb4;
+}
+.boxmodel4{
+  background:$lighten-grey;
+  padding:20px 0px;
+}
+.footer {
+  padding:20px 10px;
+  border-top:$lighten-grey solid 1px;
+  p{
+    color:$grey;
+    margin:10px 0px 10px 0px; 
+  }
+  a{
+    color:$color-primary;
+    text-decoration: none;
+  }
+}
+.mobile-sass-img {
+  width: auto;
+}
+@media only screen and (max-width: 768px) {
+  .bigbanner{
+    height: 200px;
+  }
+  .mobile-sass-img {
+    width: 100%;
+  }
+}

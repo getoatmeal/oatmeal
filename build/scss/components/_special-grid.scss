@@ -1,0 +1,62 @@
+@import		"var";
+.sld-5, .sld-7, .sd-5, .sd-7, .st-5, .st-7, .sp-5, .sp-7 {
+	float:none;
+	display: block;
+	position: relative;
+	min-height: 1px;
+	width: 100%;
+}
+.sp-5, .sp-7 {
+	float:left;
+	display: inline-block;
+	position: relative;
+	min-height: 1px;
+}
+.sp-5{
+	width:20%;
+}
+.sp-7{
+	width:14.285714286%;
+}
+@media (max-width: 768px) {
+	.st-5, .st-7 {
+		float:left;
+		display: inline-block;
+		position: relative;
+		min-height: 1px;
+	}
+	.st-5{
+		width:20%;
+	}
+	.st-7{
+		width:14.285714286%;
+	}
+}
+@media (min-width: 992px) {
+	.sd-5, .sd-7 {
+		float:left;
+		display: inline-block;
+		position: relative;
+		min-height: 1px;
+	}
+	.sd-5{
+		width:20%;
+	}
+	.sd-7{
+		width:14.285714286%;
+	}
+}
+@media (min-width: 1200px) {
+	.sld-5, .sld-7 {
+		float:left;
+		display: inline-block;
+		position: relative;
+		min-height: 1px;
+	}
+	.sld-5{
+		width:20%;
+	}
+	.sld-7{
+		width:14.285714286%;
+	}
+}

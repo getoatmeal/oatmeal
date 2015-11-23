@@ -1,0 +1,112 @@
+/* -------------------- color -------------------- */
+// first color
+$color-primary: #ec4348!default;
+$color-secondary: #76564e !default;
+$color-tertiary: #f29172 !default;
+$color-default: #000 !default;
+$color-link: #333 !default;
+$white: #FFF !default;
+$dark: #000 !default;
+$grey: #999 !default;  
+$light-grey: #D5D5D5 !default; 
+$lighten-grey: #ececec !default;
+
+body, h1, h2, h3, h4, h5{
+	color:$color-default;
+}
+b {
+	color:$color-primary;
+}
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+a {
+	color:$color-link;
+}
+a:hover {
+	color:$color-primary;
+    outline: none;
+    -moz-outline: none;
+}
+a:active, a:focus {
+ outline: none;
+ -moz-outline: none;
+}
+p, i{
+  color:$color-default;
+}
+/* -------------------- font -------------------- */
+$font-family-sans-serif:  "Helvetica", Arial, sans-serif !default;
+$font-family-serief: Georgia, "Times New Roman";
+$font-size-base:          15px !default;
+$font-size-large:         floor(($font-size-base * 1.5)) !default;
+$font-size-small:         floor(($font-size-base * 0.85)) !default;
+// heading font size
+$font-size-h1:            floor(($font-size-base * 3.2)) !default;
+$font-size-h2:            floor(($font-size-base * 2.4)) !default;
+$font-size-h3:            floor(($font-size-base * 1.75)) !default;
+$font-size-h4:            floor(($font-size-base * 1.2)) !default;
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            floor(($font-size-base * 0.86)) !default;
+// line height
+$line-height-base:        (1.5 * $font-size-base) !default;
+body {
+  font: 100% $font-family-sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+}
+h1 {
+    font-size: $font-size-h1;
+}
+h2 {
+    font-size: $font-size-h2;
+}
+h3 {
+    font-size: $font-size-h3;
+}
+h4 {
+    font-size: $font-size-h4;
+}
+h5 {
+    font-size: $font-size-h5;
+}
+h6 {
+    font-size: $font-size-h6;
+}
+// misc 
+$p-size-base: font-size-base;
+$i-size-base: font-size-base italic;
+p{
+    line-height: $line-height-base;
+    letter-spacing: 0.5px;
+}
+b {
+    font: $font-size-base;
+    font-weight: 500;
+    color: $color-primary;
+}
+@media only screen and (max-width: 768px) {
+    h1 {
+      font-size: ($font-size-h1 * 0.6);
+    }
+    h2 {
+        font-size: ($font-size-h2 * 0.7);
+    }
+    h3 {
+        font-size: ($font-size-h3 * 0.7);
+    }
+    h4 {
+        font-size: ($font-size-h4);
+    }
+    h5 {
+        font-size: ($font-size-h5);
+    }
+    h6 {
+        font-size: ($font-size-h6);
+    }
+    p{
+        font-size: ($font-size-base); 
+    }
+}

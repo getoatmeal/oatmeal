@@ -1,0 +1,29 @@
+@import "components/var";
+table.table-oatmeal{
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+  thead{
+    font-weight: bold;
+  }
+  tr{
+    border-bottom:#999 solid 1px;
+  }
+  th{
+    padding:8px 10px 8px 10px;
+    border:$light-grey solid 1px;
+    background: $lighten-grey;
+  }
+  td{
+    padding:15px 10px 15px 10px;
+    border:$light-grey solid 1px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .table-responsive{
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    border:$light-grey solid 1px;
+    padding:-1px;
+  }
+}
